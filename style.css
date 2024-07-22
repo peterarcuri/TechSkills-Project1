@@ -1,0 +1,962 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ==== BODY ======== */
+
+body {
+    background: linear-gradient(60deg, #00d4ff, #095b79);        
+    font-family: Alice, fantasy;     
+    max-width: 92vw;
+    margin: 0 auto; 
+    border: 4px solid #000000;    
+}
+
+/* ======== HEADER SECTION ========================= */
+.header-container {
+    display: grid;
+    gap: 1rem;   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.profilePic-container {
+    display: flex;
+    justify-content: center;    
+}
+
+#greeting {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;    
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;    
+    align-items: center;
+}
+
+#profilePic {    
+    border-radius: 50%;    
+    border-style: groove;
+    box-shadow: 2px -3px 3px 3px #00d4ff; 
+    height: 15rem; 
+    border: 3px solid #010d2d;       
+    margin-top: 1.3rem;       
+}
+
+#profilePic:hover {
+    box-shadow: 4px -4px 4px 4px #00d4ff;   
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    width: 100%;
+    color: #010d2d;
+    text-shadow: 2px 2px #98d2eb;
+    margin-bottom: .3em;
+}
+
+h1:hover {
+    text-shadow: 3px 3px #98d2eb;
+}
+
+h2 {
+    font-size: 2.2rem;
+    text-decoration: underline;
+    color: #010d2d;
+    text-shadow: .8px .8px #98d2eb;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2  rem;
+    color: #010d2d;
+    align-self: center;  
+    margin-right: 0.4rem;  
+}
+
+h4 {
+    font-size: 1rem;
+    text-align: center;
+    color: #010d2d;
+    padding: 0;
+    margin: 0;
+}
+
+h5 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    color: #010d2d;
+    text-shadow: 2px 2px #98d2eb;
+    margin-bottom: 0.3em;
+}
+
+/* === CONTACT STYLING (Github, email, linkedin, paragraph) ====== */
+#connect {
+    margin-top: 1rem;
+    color: #010d2d;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-right: 0.8rem;      
+}
+
+#linkedinLogo {
+    width: 4rem;         
+    border-radius: 50%;
+    box-shadow: 2px -2px #98d2eb;   
+}
+
+#githubLogo {
+    width: 4rem;     
+    border-radius: 50%;
+    box-shadow: 2px -2px #98d2eb; 
+}
+
+/* ========== NAVBAR STYLING =================== */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 92%;
+   
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 1.6rem;
+    color: #010d2d;
+    text-shadow: 1px 1px #98d2eb;
+}
+
+
+/* ==== EDUCATION SECTION (including styling for TABLE) ========== */
+.educationContainer {
+    display: flex;    
+    justify-content: flex-start;
+    flex-shrink: 2;
+    margin: 1rem;
+    border-top: 2px solid #010d2d;
+    border-width: 50%; 
+    overflow: auto;    
+}
+#education {    
+    padding-top: 2em;    
+}
+
+table {    
+    border-style: groove;
+    box-shadow: 3px -4px 3px 3px #010d2d;        
+}
+
+caption {
+    font-size: 2.3rem;    
+    text-decoration: underline;
+    color: #010d2d;
+    text-shadow: .8px .8px #98d2eb;
+    text-align: left;       
+    margin-left: 3.6rem;
+    margin-bottom: 1.8rem;
+}
+
+th {
+    text-align: left;
+    font-size: 1.5rem;
+    background: linear-gradient(50deg, #00d4ff, #095b79);        
+}
+
+table, th, td {
+    border: 1px solid #010d2d;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5rem;
+}
+
+tr {
+    background-color: #00d4ff;   
+    font-size: 1rem;
+}
+
+/* ====== TECHONLOGY SECTION STYLING ================== */
+/* Inspiration & code accredited to youTube channel: CodeLab (https://www.youtube.com/watch?v=rp36m6xH3Bw&list=WL&index=120) */
+.technologyContainer {
+    display: grid;
+    gap: 1rem;   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr;
+}
+
+#technology {
+    margin: 1rem;
+    padding-bottom: 2.5rem;
+    border-top: 2px solid #010d2d;
+    border-bottom: 2px solid #010d2d;
+    border-width: 50%; 
+}
+
+#technologies-title {
+    text-align: center;
+}
+
+.skillsbarContainer {
+    position: relative; 
+    left: 3.7rem;       
+    max-width: 60%;
+    width: 100%;
+    background: #00d4ff;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    border-radius: 7px;
+    box-shadow: 4px -4px 4px 4px #010d2d;     
+}
+
+.skillsbarContainer .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #010d2d;
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background-color: #b5b5b5;
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #010d2d;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.css {
+    width: 70%;
+}
+
+.skill-per.javascript {
+    width: 40%;
+}
+
+.skill-per.nodejs {
+    width: 10%;
+}
+
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #010d2d;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #010d2d;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+/* ========= PROJECTS STYLING ================================= */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex: 1;       
+    padding-bottom: 2.5rem;  
+    align-items: center;
+}
+
+#project-title {
+    text-align: center;
+}
+
+.card {
+    width: 15em;
+    height: auto;
+    background: linear-gradient(60deg, #00d4ff, #095b79);    
+    border-radius: .8rem;    
+    box-shadow: 3px -4px 3px 3px #010d2d;     
+    margin: 0.5rem;    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    text-align: left;
+    margin-bottom: .8rem;
+    padding-left: .4rem;
+}
+
+.card-content p {
+    color: #010d2d;
+    font-size: 1.3em;
+    line-height: 1.3;    
+}
+
+.projectBtn {
+    background-color: #00d4ff;
+    color: #010d2d;
+    padding: 0.2em;
+    width: 200px;    
+    font-size: 1.4rem; 
+    border: 1px solid #010d2d;
+    margin-top: 2.5rem;
+    font-family: Alice, fantasy;
+    border-radius: 10px;
+}
+
+.projectBtn:hover {
+    background-color: #010d2d; 
+    color: #00d4ff;
+    box-shadow: 3px -4px 3px 3px #010d2d;    
+    background: linear-gradient(50deg, #00d4ff, #095b79);     
+}
+
+.projectBtn2 {
+    background-color: #00d4ff;
+    color: #010d2d;
+    padding: 0.2em;
+    margin-left: 3.6rem;
+    width: 12rem;    
+    font-size: 1.4rem; 
+    border: 1px solid #010d2d;
+    margin-top: 2.5rem;
+    font-family: Alice, fantasy;
+    border-radius: 10px;
+}
+
+.projectBtn2:hover {
+    background-color: #010d2d; 
+    color: #00d4ff;
+    box-shadow: 3px -4px 3px 3px #010d2d;   
+    background: linear-gradient(50deg, #00d4ff, #095b79);     
+}
+
+/* === LINKS STYLING ======== */
+
+a  {
+    text-decoration: none;        
+}
+
+/* ======== CONTACT FORM SECTION ============ */
+.contact-container {
+    display: flex;  
+    flex-direction: column;      
+    justify-content: center;      
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 1rem;
+    border-top: 2px solid #010d2d;
+    border-bottom: 2px solid #010d2d;
+    border-width: 50%;   
+}
+
+.col1 {    
+    height: 100%;
+    width: 100%;
+    padding-top: 1.4em;
+}
+
+.col2 {    
+    height: 100%;
+    width: 100%;      
+}
+
+.col1 img {
+    width: 19em;      
+    border-radius: 10px;
+    box-shadow: 4px -4px 4px 4px #010d2d; 
+    opacity: .85;  
+}
+
+label {
+    width: 15em;
+    display: inline-block;
+    font-size: 1.3em;
+    color: #010d2d;    
+}
+
+form input, form textarea {
+    outline: none;    
+}
+
+form input {  
+    display: inline-block;    
+    width: 19.8em;
+    height: 1.8rem;
+    background: transparent;
+    margin: 0;    
+    color: black;      
+}
+
+form textarea {
+    width: 100%;
+}
+
+.radio {
+    width: 1.5em;   
+    padding-top: 3em;
+}
+
+form input, form textarea, form select {
+    padding: 0.1rem 0.2rem;
+    color: #010d2d;
+    border: 1px solid black;
+    background-color: #00d4ff;      
+}
+
+/* ====== FOOTER STYLING ================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #010d2d;
+    text-shadow: 1px 1px #98d2eb;         
+}
+
+/* ====================================================
+=========== MEDIA QUERIES =========================
+==================================================== */
+
+/* =========MOBILE QUERIES=============================== */
+
+@media (min-width: 360px) {
+    .col1 {
+        display: none;
+    }
+}
+
+@media (min-width: 390px) {
+    .profilePic-container {
+        justify-content: center;        
+    }
+    h1 {
+        font-size: 3.6rem;        
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    #linkedinLogo {
+        width: 4.5rem;  
+    }
+    #githubLogo {
+        width: 4.5rem; 
+    }
+    caption {
+        margin-left: 4.2rem;
+    }
+    .projectBtn2 {
+        margin-left: 4rem;
+    }
+}
+
+@media (min-width: 414px) {
+    h1 {
+        font-size: 3.8rem;        
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    #linkedinLogo {
+        width: 5rem;  
+    }
+    #githubLogo {
+        width: 5rem; 
+    }
+    caption {
+        margin-left: 5.3rem;
+    }
+    .projectBtn2 {
+        margin-left: 4.5rem;
+    }
+    .skillsbarContainer {   
+        max-width: 63.5%;
+    }
+}
+
+@media (min-width: 570px) {
+    .contact {
+        grid-column: -3 / -1;
+    }
+    h1 {
+        font-size: 4rem;        
+    }
+    h3 {
+        font-size: 1.7rem;  
+    }
+    #linkedinLogo {
+        width: 5.7rem;  
+    }
+    #githubLogo {
+        width: 5.7rem; 
+    }
+    caption {
+        margin-left: 10rem;
+    }
+    .skillsbarContainer {   
+        max-width: 75%;
+    }
+    form select {
+        width: 19.8em;
+        height: 1.8rem;
+    }
+    .projectBtn2 {
+        margin-left: 9rem;
+    }
+}
+/* ====================================================
+=========== TABLET SYTLING =========================
+==================================================== */
+
+@media (min-width: 601px) {
+    .contact {
+        grid-column: -3 / -1;
+    }
+    #linkedinLogo {    
+        margin: 0; 
+    }
+    caption {
+        margin-left: 10.8rem;
+    }
+    .skillsbarContainer {   
+        max-width: 77%;
+    }
+    .card {
+        width: 20rem;
+        height: auto;    
+    } 
+    .projectBtn2 {
+        margin-left: 10.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5.5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    #profilePic {    
+        height: 18rem; 
+    }
+    #connect {
+    font-size: 1.5rem;
+    }
+    #linkedinLogo {
+    width: 7rem;
+    }
+    #githubLogo {   
+        width: 7rem; 
+    }
+    caption {
+    margin-left: 14rem;
+    font-size: 3rem;
+    }
+    .card {
+    width: 13em;
+    height: auto;    
+    }
+    .projectBtn2 {
+        width: 11em;
+    }
+    .skillsbarContainer {   
+        max-width: 84%;
+    }
+    .card-container {
+        flex-direction: row;       
+    }
+}
+
+@media only screen and (orientation: landscape), (min-width: 1024px) {
+    h1 {
+        font-size: 5.5rem;
+    }
+    .educationContainer {
+        justify-content: center;
+    }  
+    caption {
+    padding-left: 2rem;
+    font-size: 3rem;
+    }
+    footer {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (min-width: 820px) {
+    h4 {
+        font-size: 1.2rem;
+    }    
+    #linkedinLogo {
+        width: 7.2rem; 
+    }
+    #githubLogo {   
+        width: 7.2rem; 
+    }
+    caption {
+    margin-left: 16.2rem;
+
+    }
+    .projectBtn2 {
+        width: 11em;
+    }
+    .skillsbarContainer {   
+        max-width: 84%;
+    }
+}
+
+@media (min-width: 859px) {
+    #profilePic {    
+        height: 16rem; 
+        margin-left: 1.3rem;
+    }
+    #greeting {
+         grid-column: 2 / -1;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }    
+    .contact {
+        grid-column: -4 / -1;
+    }
+    #linkedinLogo {
+        width: 7rem; 
+    }
+    #githubLogo {   
+        width: 7rem; 
+    }
+    caption {
+    margin-left: 16.5rem;
+    }    
+}
+
+@media (min-width: 1280px) {
+    #profilePic {    
+        height: 18rem; 
+        margin-left: 1.3rem;
+    }
+    #greeting {
+         grid-column: 2 / -1;
+    }
+    .contact {
+        grid-column: -5 / -1;
+    }
+    .educationContainer {
+        justify-content: center;
+    }
+    caption {
+    margin-left: 18.7rem;
+    }    
+    .skillsbarContainer {   
+        max-width: 87%;
+    }
+    .card-container {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .card {
+        width: 19rem;
+        height: auto;    
+    } 
+    .contact-container {
+        display: flex;  
+        flex-direction: row;      
+        justify-content: center;      
+        gap: 2rem;
+        width: 92%;      
+    }
+    .col1 {
+        display: flex;
+        padding-top: 3.7rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .col1 img { 
+        width: 27.5em;          
+    } 
+    .projectBtn2 {
+        margin-left: 7.3rem;
+        width: 50%;
+    }
+    #contact-title {
+        text-align: left;
+    }
+}
+
+@media only screen and (orientation: landscape), (min-width: 1280px) {
+    h1 {
+        font-size: 6.5rem;
+        margin-left: 1rem;
+    }
+    caption {
+    padding-left: .3rem;
+    font-size: 3rem;
+    }
+    footer {
+        font-size: 1.7rem; 
+    }
+}
+
+/* ====================================================
+=========== DESKTOP  SYTLING =========================
+==================================================== */
+
+@media (min-width: 1366px) {
+    .contact-container {
+        display: flex;  
+        flex-direction: row;      
+        justify-content: center;      
+        gap: 2rem;
+        width: 92%;      
+    }
+    .col1 {
+        padding-top: 3.7rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .col1 img { 
+        width: 27.5em;          
+    } 
+    .col2 {
+        width: 100%;    
+        flex-grow: 2;    
+    }
+    .projectBtn2 {
+        margin-top: 7rem;
+        padding: 1rem;
+        margin-left: 7.3rem;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1440px) {
+    #profilePic {    
+        height: 20rem; 
+        margin-left: 4.7rem;
+    }
+    h1 {
+        font-size: 6.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    #connect {
+        font-size: 1.7rem;
+    }
+    .contact {
+        grid-column: -6 / -1;
+    }
+    #linkedinLogo {
+        width: 8rem;  
+    }
+    #githubLogo {
+        width: 8rem; 
+    }
+    .skillsbarContainer {   
+        max-width: 89%;
+    }
+    .card-container {
+        gap: 2rem;
+    }
+    .contact-container {
+        display: flex;  
+        flex-direction: column;      
+        justify-content: center;      
+        gap: 2rem;
+        width: 92%;      
+    }
+    .col1 {
+        padding-top: 3.7rem;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .col1 img { 
+        width: 35.5em;          
+    } 
+    .col2 {
+        width: 100%;
+        flex-grow: 2;
+    }
+    .projectBtn2 {
+        padding: 0.2em;
+        margin-left: auto;
+        width: 12rem;          
+    }
+}
+
+@media (min-width: 1536px) {
+    #profilePic {    
+        height: 20rem; 
+        margin-left: 4.7rem;
+    }
+    h1 {
+        font-size: 6.5rem;
+        margin-left: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h4 {
+        margin-left: 3rem;
+    }
+    .greeting {
+        justify-content: flex-end;
+    }
+    #connect {
+        font-size: 1.7rem;
+    }
+    .contact {
+        grid-column: -6 / -1;
+    }
+    #linkedinLogo {
+        width: 9.3rem;  
+    }
+    #githubLogo {
+        width: 9.3rem; 
+    }
+    .educationContainer {
+        justify-content: center;
+        max-width: 100%;        
+    }
+    .skillsbarContainer {   
+        max-width: 89%;
+    }
+    .card-container {
+        gap: 2rem;
+    }
+    .contact-container {
+        display: flex;  
+        flex-direction: column;      
+        justify-content: center;      
+        gap: 2rem;
+        width: 92%;      
+    }
+    .col1 {
+        padding-top: 3.7rem;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .col1 img { 
+        width: 35.5em;          
+    } 
+    .col2 {
+        width: 100%;
+        flex-grow: 2;
+    }
+    footer {
+        font-size: 1.6rem; 
+    }
+}
+
+@media (min-width: 1600px) {
+    #profilePic {    
+        height: 22rem; 
+        margin-left: 5.7rem;
+    }
+    h1 {
+        font-size: 6.5rem;
+        margin-left: 3.5rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h4 {
+        margin-left: 7rem;
+    }
+    .projectBtn2 {
+        margin-top: 7rem;
+        padding: 1rem;
+        margin-left: auto;
+        width: 30%;
+    }
+    footer {
+        font-size: 2rem; 
+    }
+}
+
+@media (min-width: 1920px) {
+    #profilePic {    
+        height: 27rem;         
+    }
+    .profilePic-container {
+        justify-content: center;
+        grid-column: 1 / 3;
+    }
+    #greeting {
+        grid-column: 3 / -1;
+    }
+    h1 {
+        font-size: 7rem;
+        margin-left: 3.5rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h4 {
+        margin-left: 7rem;
+    }
+    .contact {
+        grid-column: -6 / -2;
+    }
+    .projectBtn2 {
+        margin-top: 7rem;
+        padding: 1rem;
+        margin-left: auto;
+        width: 30%;
+    }
+    footer {
+        font-size: 2.5rem;         
+    }
+}
